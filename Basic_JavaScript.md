@@ -3,23 +3,117 @@
 
  - Comment Your JavaScript Code
 
-- `//` 
-- `/*
-   *
-   */`
+    - `// This is an in-line comment.`
+    - `/* This is a 
+    multi-line comment */`
+    >**BEST PRACTICE**  : 
+As you write code, you should regularly add comments to clarify the function of parts of your code. Good commenting can help communicate the intent of your code—both for others and for your future self.
+
+- Declare JavaScript Variables
+    - Seven different data types
+    
+    | Variables | exemple |
+    | --------  | ------- |
+    | undefined |         |
+    |   null    |         |
+    | boolean   |   True  |
+    | symbol    |         |
+    | string    |  "yes"  |
+    | object    | {} []   |
+    | number    |    3    |
+    
+    - declare a variable with : `var`
+
+- Storing Values with the Assignment Operator
+  - `myVariable = 5;`
+    - it s read from right to left , the value 5 (number) will be assigned (operator =) to the known variable `myVariable` , know because it s already declared.
+
+- Initializing Variables with the Assignment Operator
+    - `var a = 0;` 
+
+
+- Understanding Uninitialized Variables
+     > When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a literal string of "undefined"
+
+
+- Understanding Case Sensitivity in Variables
+
+    - In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
+    > **BEST PRACTICE** : Write variable names in JavaScript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+    - `var properCamelCase;`
+
+- Add Two Numbers with JavaScript
+    - **Number**  is a data type in JavaScript which represents numeric data.
+    - JavaScript uses the + symbol as an addition operator when placed between two numbers.
+    - ` a = 4 + 20;`
+
+- Subtract One Number from Another with JavaScript
+    - JavaScript uses the - symbol for subtraction.
+    -` b = 44 - 32`
+-  Multiply Two Numbers with JavaScript
+    - JavaScript uses the * symbol for multiplication of two numbers.
+    - `c = 4 * 3`
+
+- Divide One Number by Another with JavaScript
+    - JavaScript uses the / symbol for division.
+    - `d = 4 / 2 `
+
+
+- Increment a Number with JavaScript
+    - `myVar = myVar + 1;` === `myVar++` === `myVar += 1`
+
+- Decrement a Number with JavaScript
+    - `i = i - 1;` === `i--`
+
+- Create Decimal Numbers with JavaScript
+    -Decimal numbers are sometimes referred to as **floating point numbers** or **floats**.
+
+- Multiply Two Decimals with JavaScript
+    - `var product = 2.0 * 1.2;`
+
+- Divide One Decimal by Another with JavaScript
+    - `var quotient = 4.4 / 2.0;`
+
+- Finding a Remainder in JavaScript
+    - The remainder operator % gives the remainder of the division of two numbers.
+        - ``5 % 2 = 1 because
+        Math.floor(5 / 2) = 2 (Quotient)
+        2 * 2 = 4
+        5 - 4 = 1 (Remainder)``
+        - `17 % 2 = 1` (17 is Odd)
+        - `48 % 2 = 0` (48 is Even) 
+    - ⚠️ The remainder operator is sometimes incorrectly referred to as the "**modulus**" operator. It is very similar to modulus, but does not work properly with negative numbers.
+
+- Compound Assignment With Augmented Addition `+=`
+    -  it is common to use assignments `=` to modify the contents of a variable
+    - `var a = 3` ...`a +=  6;` 
+- Compound Assignment With Augmented Subtraction`-=`
+    - `var myVar= 3` ...`myVar -= 5;`
+- Compound Assignment With Augmented Multiplication `*=`
+    - `var c = 10`....`c *= 10;`
+- Compound Assignment With Augmented Division `/=`
+    -  `var b = 13`...`b /= 3`
+
+- Declare String Variables
+    - `var myName = "your name";`
+        - "your name" is called a **string literal**
+
+- Escaping Literal Quotes in Strings `\`
+    - When you are defining a string you must start and end with a single or double quote
+    -In JavaScript, you can escape a quote `'` or  `"` from considering it as an end of string quote by placing a backslash `\` in front of the quote.
+
+    - `var sampleStr = "Alan said, \"Peter is learning JavaScript\".";`
+
+
+---- 20% --- 50 min
 
 
 
 
-        Declare JavaScript Variables
-        Not Passed
-        Storing Values with the Assignment Operator
-        Not Passed
-        Initializing Variables with the Assignment Operator
-        Not Passed
-        Understanding Uninitialized Variables
-        Not Passed
-        Understanding Case Sensitivity in Variables
+
+
+
+        
         Not Passed
         Add Two Numbers with JavaScript
         Not Passed

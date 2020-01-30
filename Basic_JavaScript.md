@@ -107,59 +107,66 @@ As you write code, you should regularly add comments to clarify the function of 
 
 ---- 20% --- 50 min
 
+- Quoting Strings with Single Quotes
+    - String values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote
+        - `var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+`
+- Escape Sequences in Strings
+    - Quotes are not the only characters that can be escaped inside a string. There are two reasons to use escaping characters:
+        - To allow you to use characters you may not otherwise be able to type out, such as a carriage return.
+        - To allow you to represent multiple quotes in a string without JavaScript misinterpreting what you mean.
 
+        | Code | Output |
+        | ---- | ------ |
+        |`\'`| single quote|
+        |`\"`| double quote|
+        |`\\`| backslash |
+        |`\n`|newline|
+        |`\r`|carriage return |
+        |`\t`|bat|
+        |`\b`| word boudary|
+        |`\f`|form feed|
 
+- Concatenating Strings with Plus Operator `+`
+    - `'My name is Alan,' + ' I concatenate.'`
+- Concatenating Strings with the Plus Equals Operator `+=`
+    - `+=`operator to concatenate a string onto the end of an existing string variable.
+- Constructing Strings with Variables
+    - `var ourStr = "Hello, our name is " + ourName + ", how are you?";`
 
+- Appending Variables to Strings
+    - ``var someAdjective = "ABCedf";
+        var myStr = "Learning to code is ";
+        myStr += someAdjective;``
+- Find the Length of a String
+    - `lastNameLength = "a name".length;`
+- Use Bracket Notation to Find the First Character in a String
+    - `firstName = "Charles"; firstName[0];`
+- Understand String Immutability
+    -  String values are immutable, which means that they cannot be altered once created.
+        - For example, the following code: `var myStr = "Bob"; myStr[0] = "J";`
+        - cannot change the value of myStr to "Job", because the contents of myStr cannot be altered. Note that this does not mean that myStr cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change myStr would be to assign it with a new string,
+        - `var myStr = "Bob"; myStr = "Job";`
 
+- Use Bracket Notation to Find the Nth Character in a String
+    - `var secondLetterOfFirstName = firstName[1]`
+- Use Bracket Notation to Find the Last Character in a String
+    - `var lastLetterOfLastName = lastName[lastname.length -1];`
+- Use Bracket Notation to Find the Nth-to-Last Character in a String
+    - `firstName[firstName.length - 3];`
 
+- Word Blanks
+    -  `myName + " " + myVerb;`
+- Store Multiple Values in one Variable using JavaScript Arrays
+    - `var ourArray = ["John", 23];`
 
-        
-        Not Passed
-        Add Two Numbers with JavaScript
-        Not Passed
-        Subtract One Number from Another with JavaScript
-        Not Passed
-        Multiply Two Numbers with JavaScript
-        Not Passed
-        Divide One Number by Another with JavaScript
-        Not Passed
-        Increment a Number with JavaScript
-        Not Passed
-        Decrement a Number with JavaScript
-        Not Passed
-        Create Decimal Numbers with JavaScript
-        Not Passed
-        Multiply Two Decimals with JavaScript
-        Not Passed
-        Divide One Decimal by Another with JavaScript
-        Not Passed
-        Finding a Remainder in JavaScript
-        Not Passed
-        Compound Assignment With Augmented Addition
-        Not Passed
-        Compound Assignment With Augmented Subtraction
-        Not Passed
-        Compound Assignment With Augmented Multiplication
-        Not Passed
-        Compound Assignment With Augmented Division
-        Not Passed
-        Declare String Variables
-        Not Passed
-        Escaping Literal Quotes in Strings
-        Not Passed
-        Quoting Strings with Single Quotes
-        Not Passed
-        Escape Sequences in Strings
-        Not Passed
-        Concatenating Strings with Plus Operator
-        Not Passed
-        Concatenating Strings with the Plus Equals Operator
-        Not Passed
-        Constructing Strings with Variables
-        Not Passed
-        Appending Variables to Strings
-        Not Passed
-        Find the Length of a String
+- Nest one Array within Another Array
+    - `var ourArray = [["the universe", 42], ["everything", 101010]];`
+- Access Array Data with Indexes
+    - `var ourArray = [50,60,70]; var ourData = ourArray[0]; // equals 50`
+
+--- 35%  --- 30 min
+
         Not Passed
         Use Bracket Notation to Find the First Character in a String
         Not Passed

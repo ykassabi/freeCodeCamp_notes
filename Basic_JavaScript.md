@@ -166,6 +166,12 @@ As you write code, you should regularly add comments to clarify the function of 
     - `var ourArray = [50,60,70]; var ourData = ourArray[0]; // equals 50`
 
 --- 35%  --- 30 min
+-  Modify Array Data With Indexes
+    - `var myArray = [18,64,99]; myArray[0] = 45;`
+- Access Multi-Dimensional Arrays With Indexes
+    - `// Setup var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];`
+    - `var myData = myArray[2][1]; // => 8`
+
 
         Not Passed
         Use Bracket Notation to Find the First Character in a String

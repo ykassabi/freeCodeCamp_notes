@@ -172,167 +172,146 @@ As you write code, you should regularly add comments to clarify the function of 
     - `// Setup var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];`
     - `var myData = myArray[2][1]; // => 8`
 
+- Manipulate Arrays With `push()`
+    - `var arr = [1,2,3]; arr.push(4);`
 
+- Manipulate Arrays With `pop()`
+    - `var threeArr = [1, 4, 6]; var oneDown = threeArr.pop();`
+
+- Manipulate Arrays With `shift()`
+    - 
+
+- Manipulate Arrays With unshift()
         Not Passed
-        Use Bracket Notation to Find the First Character in a String
+- Shopping List
         Not Passed
-        Understand String Immutability
+- Write Reusable JavaScript with Functions
         Not Passed
-        Use Bracket Notation to Find the Nth Character in a String
+- Passing Values to Functions with Arguments
         Not Passed
-        Use Bracket Notation to Find the Last Character in a String
+- Global Scope and Functions
         Not Passed
-        Use Bracket Notation to Find the Nth-to-Last Character in a String
+- Local Scope and Functions
         Not Passed
-        Word Blanks
+- Global vs. Local Scope in Functions
         Not Passed
-        Store Multiple Values in one Variable using JavaScript Arrays
+- Return a Value from a Function with Return
         Not Passed
-        Nest one Array within Another Array
+- Understanding Undefined Value returned from a Function
         Not Passed
-        Access Array Data with Indexes
+- Assignment with a Returned Value
         Not Passed
-        Modify Array Data With Indexes
+- Stand in Line
         Not Passed
-        Access Multi-Dimensional Arrays With Indexes
+- Understanding Boolean Values
         Not Passed
-        Manipulate Arrays With push()
+- Use Conditional Logic with If Statements
         Not Passed
-        Manipulate Arrays With pop()
+- Comparison with the Equality Operator
         Not Passed
-        Manipulate Arrays With shift()
+- Comparison with the Strict Equality Operator
         Not Passed
-        Manipulate Arrays With unshift()
+- Practice comparing different values
         Not Passed
-        Shopping List
+- Comparison with the Inequality Operator
         Not Passed
-        Write Reusable JavaScript with Functions
+- Comparison with the Strict Inequality Operator
         Not Passed
-        Passing Values to Functions with Arguments
+- Comparison with the Greater Than Operator
         Not Passed
-        Global Scope and Functions
+- Comparison with the Greater Than Or Equal To Operator
         Not Passed
-        Local Scope and Functions
+- Comparison with the Less Than Operator
         Not Passed
-        Global vs. Local Scope in Functions
+- Comparison with the Less Than Or Equal To Operator
         Not Passed
-        Return a Value from a Function with Return
+- Comparisons with the Logical And Operator
         Not Passed
-        Understanding Undefined Value returned from a Function
+- Comparisons with the Logical Or Operator
         Not Passed
-        Assignment with a Returned Value
+- Introducing Else Statements
         Not Passed
-        Stand in Line
+- Introducing Else If Statements
         Not Passed
-        Understanding Boolean Values
+- Logical Order in If Else Statements
         Not Passed
-        Use Conditional Logic with If Statements
+- Chaining If Else Statements
         Not Passed
-        Comparison with the Equality Operator
+- Golf Code
         Not Passed
-        Comparison with the Strict Equality Operator
+- Selecting from Many Options with Switch Statements
         Not Passed
-        Practice comparing different values
+- Adding a Default Option in Switch Statements
         Not Passed
-        Comparison with the Inequality Operator
+- Multiple Identical Options in Switch Statements
         Not Passed
-        Comparison with the Strict Inequality Operator
+- Replacing If Else Chains with Switch
         Not Passed
-        Comparison with the Greater Than Operator
+- Returning Boolean Values from Functions
         Not Passed
-        Comparison with the Greater Than Or Equal To Operator
+- Return Early Pattern for Functions
         Not Passed
-        Comparison with the Less Than Operator
+- Counting Cards
         Not Passed
-        Comparison with the Less Than Or Equal To Operator
+- Build JavaScript Objects
         Not Passed
-        Comparisons with the Logical And Operator
+- Accessing Object Properties with Dot Notation
         Not Passed
-        Comparisons with the Logical Or Operator
+- Accessing Object Properties with Bracket Notation
         Not Passed
-        Introducing Else Statements
+- Accessing Object Properties with Variables
         Not Passed
-        Introducing Else If Statements
+- Updating Object Properties
         Not Passed
-        Logical Order in If Else Statements
+- Add New Properties to a JavaScript Object
         Not Passed
-        Chaining If Else Statements
+- Delete Properties from a JavaScript Object
         Not Passed
-        Golf Code
+- Using Objects for Lookups
         Not Passed
-        Selecting from Many Options with Switch Statements
+- Testing Objects for Properties
         Not Passed
-        Adding a Default Option in Switch Statements
+- Manipulating Complex Objects
         Not Passed
-        Multiple Identical Options in Switch Statements
+- Accessing Nested Objects
         Not Passed
-        Replacing If Else Chains with Switch
+- Accessing Nested Arrays
         Not Passed
-        Returning Boolean Values from Functions
+- Record Collection
         Not Passed
-        Return Early Pattern for Functions
+- Iterate with JavaScript While Loops
         Not Passed
-        Counting Cards
+- Iterate with JavaScript For Loops
         Not Passed
-        Build JavaScript Objects
+- Iterate Odd Numbers With a For Loop
         Not Passed
-        Accessing Object Properties with Dot Notation
+- Count Backwards With a For Loop
         Not Passed
-        Accessing Object Properties with Bracket Notation
+- Iterate Through an Array with a For Loop
         Not Passed
-        Accessing Object Properties with Variables
+- Nesting For Loops
         Not Passed
-        Updating Object Properties
+- Iterate with JavaScript Do...While Loops
         Not Passed
-        Add New Properties to a JavaScript Object
+- Replace Loops using Recursion
         Not Passed
-        Delete Properties from a JavaScript Object
+- Profile Lookup
         Not Passed
-        Using Objects for Lookups
+- Generate Random Fractions with JavaScript
         Not Passed
-        Testing Objects for Properties
+- Generate Random Whole Numbers with JavaScript
         Not Passed
-        Manipulating Complex Objects
+- Generate Random Whole Numbers within a Range
         Not Passed
-        Accessing Nested Objects
+- Use the parseInt Function
         Not Passed
-        Accessing Nested Arrays
+- Use the parseInt Function with a Radix
         Not Passed
-        Record Collection
+- Use the Conditional (Ternary) Operator
         Not Passed
-        Iterate with JavaScript While Loops
+- Use Multiple Conditional (Ternary) Operators
         Not Passed
-        Iterate with JavaScript For Loops
+- Use Recursion to Create a Countdown
         Not Passed
-        Iterate Odd Numbers With a For Loop
-        Not Passed
-        Count Backwards With a For Loop
-        Not Passed
-        Iterate Through an Array with a For Loop
-        Not Passed
-        Nesting For Loops
-        Not Passed
-        Iterate with JavaScript Do...While Loops
-        Not Passed
-        Replace Loops using Recursion
-        Not Passed
-        Profile Lookup
-        Not Passed
-        Generate Random Fractions with JavaScript
-        Not Passed
-        Generate Random Whole Numbers with JavaScript
-        Not Passed
-        Generate Random Whole Numbers within a Range
-        Not Passed
-        Use the parseInt Function
-        Not Passed
-        Use the parseInt Function with a Radix
-        Not Passed
-        Use the Conditional (Ternary) Operator
-        Not Passed
-        Use Multiple Conditional (Ternary) Operators
-        Not Passed
-        Use Recursion to Create a Countdown
-        Not Passed
-        Use Recursion to Create a Range of Numbers
+- Use Recursion to Create a Range of Numbers
 

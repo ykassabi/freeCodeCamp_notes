@@ -216,10 +216,21 @@ As you write code, you should regularly add comments to clarify the function of 
 
 - Stand in Line
     > In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.
+    - ``arr.push(item);
+  var removed = arr.shift();
+  return removed; // Change this line``
+
 - Understanding Boolean Values
-        Not Passed
+    - Booleans may only be one of two values: true or false. They are basically little on-off switches, where true is "on" and false is "off." These two states are mutually exclusive.
+
 - Use Conditional Logic with If Statements
-        Not Passed
+    - If statements are used to make decisions in code. The keyword if tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false.
+    - When the condition evaluates to true, the program executes the statement inside the curly braces. When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.
+    - > ``
+    if (condition is true) {
+      statement is executed
+    }``
+    
 - Comparison with the Equality Operator
         Not Passed
 - Comparison with the Strict Equality Operator

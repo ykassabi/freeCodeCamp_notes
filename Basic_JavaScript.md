@@ -177,32 +177,45 @@ As you write code, you should regularly add comments to clarify the function of 
 
 - Manipulate Arrays With `pop()`
     - `var threeArr = [1, 4, 6]; var oneDown = threeArr.pop();`
+    - pop() always removes the last element of an array
 
 - Manipulate Arrays With `shift()`
-    - 
+    - remove the first
 
-- Manipulate Arrays With unshift()
-        Not Passed
+- Manipulate Arrays With `unshift()`
+    - Adds the element at the beginning of the array.
+    - 
 - Shopping List
-        Not Passed
+    - subArray
 - Write Reusable JavaScript with Functions
-        Not Passed
+    - `function functionName() {console.log("Hello World");}`
 - Passing Values to Functions with Arguments
-        Not Passed
+    - `function testFun(param1, param2) {console.log(param1, param2);}`
+
 - Global Scope and Functions
-        Not Passed
+    - > scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
+    - > Variables which are used without the `var` keyword are automatically created in the **global scope**. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with `var`.
+
 - Local Scope and Functions
-        Not Passed
+    - Variables which are declared within a function, as well as the function parameters have local scope. That means, they are only visible within that function.
+    ``function myTest() {
+  var loc = "foo";
+  console.log(loc);}myTest(); // logs "foo" console.log(loc); // loc is not defined``
 - Global vs. Local Scope in Functions
-        Not Passed
+    -It is possible to have both `local` and `global` variables with the same name. When you do this, the local variable takes precedence over the `global` variable.
+
 - Return a Value from a Function with Return
-        Not Passed
-- Understanding Undefined Value returned from a Function
-        Not Passed
+    - We can pass values into a function with arguments. You can use a return statement to send a value back out of a function.
+    - ``function plusThree(num) { return num + 3; }var answer = plusThree(5); // 8``
+
+- Understanding `Undefined` Value `returned` from a Function
+    - A function can include the `return` statement but it does not have to. In the case that the function doesn't have a `return` statement, when you call it, the function processes the inner code but the returned value is `undefined`
+    - ``var sum = 0;function addSum(num) {sum = sum + num;}addSum(3); // sum will be modified but returned value is undefined``
 - Assignment with a Returned Value
-        Not Passed
+    - everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable.
+
 - Stand in Line
-        Not Passed
+    > In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.
 - Understanding Boolean Values
         Not Passed
 - Use Conditional Logic with If Statements

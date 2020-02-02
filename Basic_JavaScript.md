@@ -230,37 +230,79 @@ As you write code, you should regularly add comments to clarify the function of 
     if (condition is true) {
       statement is executed
     }``
-    
+
 - Comparison with the Equality Operator
-        Not Passed
+    - The most basic operator is the equality operator ==. The equality operator compares two values and returns true if they're equivalent or false if they are not. Note that equality is different from assignment (=), which assigns the value at the right of the operator to a variable in the left.
+    - > ``1   ==  1  // true -- 1   ==  2 // false  -- 1   == '1'  // true  --  "3" ==  3   // true ``
+
 - Comparison with the Strict Equality Operator
-        Not Passed
+    - Strict equality (===) is the counterpart to the equality operator (==). However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+
 - Practice comparing different values
-        Not Passed
+    - If the values being compared are not of the same type, the equality operator will perform a type conversion, and then evaluate the values. However, the strict equality operator will compare both the data type and value as-is, without converting one type to the other.
+    - ``3 == '3'  // returns true because JavaScript performs type conversion from string to number
+        3 === '3' // returns `false` because the types are different and type conversion is not performed``
+
 - Comparison with the Inequality Operator
-        Not Passed
+    - The inequality operator `!=` is the opposite of the equality operator. It means "Not Equal" and returns `false` where equality would return `true` and vice versa. Like the equality operator, the inequality operator will convert data types of values while comparing.
+    - ``1 !=  2     // true
+        1 != "1"    // false
+        1 != '1'    // false
+        1 != true   // false
+        0 != false  // false
+        ``
 - Comparison with the Strict Inequality Operator
-        Not Passed
+    - The strict inequality operator `!==` is the logical opposite of the strict equality operator. It means "Strictly Not Equal" and returns `false` where strict equality would return true and vice versa. Strict inequality will not convert data types.
+
 - Comparison with the Greater Than Operator
-        Not Passed
+    - The greater than operator `>` compares the values of two numbers. If the number to the left is greater than the number to the right, it returns true. Otherwise, it returns false.
+
 - Comparison with the Greater Than Or Equal To Operator
-        Not Passed
+    - The greater than or equal to operator (>=) compares the values of two numbers. If the number to the left is greater than or equal to the number to the right, it returns true. Otherwise, it returns false.
+    - Like the equality operator, greater than or equal to operator will convert data types while comparing.
 - Comparison with the Less Than Operator
-        Not Passed
+    - The less than operator `<` compares the values of two numbers. If the number to the left is less than the number to the right, it returns true. Otherwise, it returns false. Like the equality operator, less than operator converts data types while comparing.
+    
 - Comparison with the Less Than Or Equal To Operator
-        Not Passed
+    - The less than or equal to operator `<=` compares the values of two numbers. If the number to the left is less than or equal to the number to the right, it returns true. If the number on the left is greater than the number on the right, it returns false. Like the equality operator, `less than or equal` to converts data types.
+
 - Comparisons with the Logical And Operator
-        Not Passed
+    - The logical and operator `&&` returns `true` if and only if the operands to the left and right of it are true.
+    - ``  if (val <= 50  && val >= 25 ) { return "Yes";}``
 - Comparisons with the Logical Or Operator
-        Not Passed
+    - The logical or operator (||) returns true if either of the operands is true. Otherwise, it returns false.
+    - The logical or operator is composed of two pipe symbols: (||). This can typically be found between your Backspace and Enter keys.
+
 - Introducing Else Statements
-        Not Passed
+    - > ``if (num > 10) {
+        return "Bigger than 10";
+        } else {
+        return "10 or Less";
+        }
+        ``
 - Introducing Else If Statements
-        Not Passed
+    - ``if (num > 15) {
+        return "Bigger than 15";
+        } else if (num < 5) {
+        return "Smaller than 5";
+        } else {
+        return "Between 5 and 15";
+        }
+        ``
 - Logical Order in If Else Statements
-        Not Passed
+    - the importantce of the order in if and else if statements
 - Chaining If Else Statements
-        Not Passed
+    - ``if (condition1) {
+        statement1
+        } else if (condition2) {
+        statement2
+        } else if (condition3) {
+        statement3
+        . . .
+        } else {
+        statementN
+        }
+        ``
 - Golf Code
         Not Passed
 - Selecting from Many Options with Switch Statements

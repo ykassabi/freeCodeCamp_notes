@@ -304,19 +304,60 @@ As you write code, you should regularly add comments to clarify the function of 
         }
         ``
 - Golf Code
-        Not Passed
+    - golf 
 - Selecting from Many Options with Switch Statements
-        Not Passed
+        ``switch(lowercaseLetter) {
+            case "a":
+                console.log("A");
+                break;
+            case "b":
+                console.log("B");
+                break;
+            }``
 - Adding a Default Option in Switch Statements
-        Not Passed
+    ``switch (num) {
+        case value1:
+            statement1;
+            break;
+        case value2:
+            statement2;
+            break;
+        ...
+        default:
+            defaultStatement;
+            break;
+        }
+        ``
+
 - Multiple Identical Options in Switch Statements
-        Not Passed
+        > If the break statement is omitted from a switch statement's case, the following case statement(s) are executed until a break is encountered. If you have multiple inputs with the same output, you can represent them in a switch statement like this:
+        ``switch(val) {
+            case 1:
+            case 2:
+            case 3:
+                result = "1, 2, or 3";
+                break;
+            case 4:
+                result = "4 alone";
+            }
+            ``
 - Replacing If Else Chains with Switch
-        Not Passed
+        - If you have many options to choose from, a switch statement can be easier to write than many chained if/else if statements
 - Returning Boolean Values from Functions
-        Not Passed
+        - `` function isEqual(a,b) {
+                if (a === b) {
+                    return true;
+                } else {
+                    return false;
+                }
+                }``
+                - better to write it as ;
+        - ``function isEqual(a,b) {
+                return a === b;
+                }
+                ``
 - Return Early Pattern for Functions
-        Not Passed
+        - When a return statement is reached, the execution of the current function stops and control returns to the calling location.
 - Counting Cards
         Not Passed
 - Build JavaScript Objects

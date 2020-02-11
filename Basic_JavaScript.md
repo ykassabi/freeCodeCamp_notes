@@ -361,23 +361,52 @@ As you write code, you should regularly add comments to clarify the function of 
 - Counting Cards
         Not Passed
 - Build JavaScript Objects
-        Not Passed
+        - ``var cat = {
+                "name": "Whiskers",
+                "legs": 4,
+                "tails": 1,
+                "enemies": ["Water", "Dogs"]
+        };``
+
 - Accessing Object Properties with Dot Notation
-        Not Passed
+        - There are two ways to access the properties of an object: dot notation `.` and bracket notation `[]`, similar to an array.
+        - Dot notation is what you use when you know the name of the property you're trying to access ahead of time.
+
 - Accessing Object Properties with Bracket Notation
-        Not Passed
+        - The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.
+        - However, you can still use bracket notation on object properties without spaces.
+        -`var drinkValue = testObj["the drink"]`
+
 - Accessing Object Properties with Variables
-        Not Passed
+        - Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.
+        - `var playerNumber = "the drink";     `
+            `var player = testObj[playerNumber]; `
 - Updating Object Properties
-        Not Passed
+        - two way to change 
+            - ``var ourDog = {
+                    "name": "Camper",
+                    "legs": 4,
+                    "tails": 1,
+                    "friends": ["everything!"]
+                    };
+                ``
+            - `ourDog["name"] = "Happy Camper";` or 
+            - `ourDog.name = "Happy Camper"; `
 - Add New Properties to a JavaScript Object
-        Not Passed
+        - same way as update : `myDog.bark = "woof" `
 - Delete Properties from a JavaScript Object
-        Not Passed
+        - `delete mydog.tails`
 - Using Objects for Lookups
-        Not Passed
+        - Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to "lookup" values rather than a `switch` statement or an `if/else` chain. This is most useful when you know that your input data is limited to a certain range.
 - Testing Objects for Properties
-        Not Passed
+        - Sometimes it is useful to check if the property of a given object exists or not. We can use the .`hasOwnProperty(propname)` method of objects to determine if that object has the given property name. .`hasOwnProperty()` returns `true` or `false` if the property is found or not.
+        > ``var myObj = {
+            top: "hat",
+            bottom: "pants"
+            };
+            myObj.hasOwnProperty("top");    // true
+            myObj.hasOwnProperty("middle"); // false``
+            
 - Manipulating Complex Objects
         Not Passed
 - Accessing Nested Objects

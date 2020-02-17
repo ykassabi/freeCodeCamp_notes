@@ -468,30 +468,76 @@ As you write code, you should regularly add comments to clarify the function of 
             ourArray.push(i);
             }``
 - Iterate Through an Array with a For Loop
-        Not Passed
-- Nesting For Loops
-        Not Passed
-- Iterate with JavaScript Do...While Loops
-        Not Passed
-- Replace Loops using Recursion
-        Not Passed
-- Profile Lookup
-        Not Passed
-- Generate Random Fractions with JavaScript
-        Not Passed
-- Generate Random Whole Numbers with JavaScript
-        Not Passed
-- Generate Random Whole Numbers within a Range
-        Not Passed
-- Use the parseInt Function
-        Not Passed
-- Use the parseInt Function with a Radix
-        Not Passed
-- Use the Conditional (Ternary) Operator
-        Not Passed
-- Use Multiple Conditional (Ternary) Operators
-        Not Passed
-- Use Recursion to Create a Countdown
-        Not Passed
-- Use Recursion to Create a Range of Numbers
+        - ``var arr = [10, 9, 8, 7, 6];
+            for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            }``
 
+- Nesting For Loops
+        - 
+- Iterate with JavaScript Do...While Loops
+        - The next type of loop you will learn is called a `do...while` loop. It is called a do...while loop because it will first do one pass of the code inside the loop no matter what, and then continue to run the loop while the specified condition evaluates to true.
+        - ``var ourArray = [];
+            var i = 0;
+            do {
+            ourArray.push(i);
+            i++;
+            } while (i < 5);``
+
+
+
+- Replace Loops using Recursion
+        - `Recursion` is the concept that a function can be expressed in terms of itself. To help understand this, start by thinking about the following task: multiply the elements from 0 to n inclusive in an array to create the product of those elements. Using a for loop, you could do this:
+        - ``function multiply(arr, n) {
+            var product = arr[0];
+            for (var i = 1; i <= n; i++) {
+                product *= arr[i];
+            }
+            return product;
+        }``
+        - However, notice that `multiply(arr, n) == multiply(arr, n - 1) * arr[n]`. That means you can rewrite `multiply` in terms of itself and never need to use a loop.
+        - > `` function multiply(arr, n) {
+                if (n <= 0) {
+                return arr[0];
+                } else {
+                return multiply(arr, n - 1) * arr[n];
+                }
+            }``
+        - The recursive version of `multiply` breaks down like this. In the base case, where`n <= 0`, it returns the result, `arr[0]`. For larger values of n, it calls itself, but with n - 1. That function call is evaluated in the same way, calling multiply again until `n = 0`. At this point, all the functions can return and the original `multiply` returns the answer.
+        -Note: Recursive functions must have a base case when they return without calling the function again (in this example, when n <= 0), otherwise they can never finish executing.
+
+- Profile Lookup
+        - ..
+- Generate Random Fractions with JavaScript
+        - `Math.random()`
+- Generate Random Whole Numbers with JavaScript
+        - >     1- Use Math.random() to generate a random decimal.
+                2- Multiply that random decimal by 20.
+                3- Use another function, Math.floor() to round the number down to its nearest whole number.
+- Generate Random Whole Numbers within a Range
+        - `Math.floor(Math.random() * (max - min + 1)) + min`
+- Use the parseInt Function
+        - The parseInt() function parses a string and returns an integer 
+        - `var a = parseInt("007");`
+- Use the parseInt Function with a Radix
+        - `parseInt(string, radix);` rdix = 2 for bibarry
+- Use the Conditional (Ternary) Operator
+        - `condition ? statement-if-true : statement-if-false;`
+- Use Multiple Conditional (Ternary) Operators
+        - ``function findGreaterOrEqual(a, b) {
+                return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+                }
+            ``
+- Use Recursion to Create a Countdown
+        ``function countup(n) {
+            if (n < 1) {
+                return [];
+            } else {
+                const countArray = countup(n - 1);
+                countArray.push(n);
+                return countArray;
+            }
+            }
+            console.log(countup(5)); // [ 1, 2, 3, 4, 5 ]``
+- Use Recursion to Create a Range of Numbers
+        ====

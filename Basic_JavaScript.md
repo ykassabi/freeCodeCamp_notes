@@ -410,7 +410,7 @@ As you write code, you should regularly add comments to clarify the function of 
 - Manipulating Complex Objects
         - Sometimes you may want to store data in a flexible Data Structure. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions, and objects.
         `var ourMusic = [
-  {
+  cabinet: {
     "artist": "Daft Punk",
     "title": "Homework",
     "release_year": 1997,
@@ -421,22 +421,52 @@ As you write code, you should regularly add comments to clarify the function of 
     ],
     "gold": true
   }
-];
-`
+];`
+
 - Accessing Nested Objects
-        Not Passed
+        - `ourMusic.cabinet["top drawer"].folder2;  // "secrets"`
 - Accessing Nested Arrays
-        Not Passed
+        - As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, Array bracket notation can be chained to access nested arrays.
+        - `ourPets[1].names[0]; // "..." `
 - Record Collection
-        Not Passed
+        - The first type of loop we will learn is called a while loop because it runs "while" a specified condition is true and stops once that condition is no longer true.
+        - ``var ourArray = [];
+            var i = 0;
+            while(i < 5) {
+            ourArray.push(i);
+            i++;
+            }``
 - Iterate with JavaScript While Loops
-        Not Passed
+        - The most common type of JavaScript loop is called a for loop because it runs "for" a specific number of times.
+
+        For loops are declared with three optional expressions separated by semicolons:
+
+        `for ([initialization]; [condition]; [final-expression])`
+
+        The `initialization` statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable.
+
+        The `condition` statement is evaluated at the beginning of every loop iteration and will continue as long as it evaluates to `true`. When `condition` is `false` at the start of the iteration, the loop will stop executing. This means if condition starts as false, your loop will never execute.
+
+        The final-expression is executed at the end of each loop iteration, prior to the next condition check and is usually used to increment or decrement your loop counter.
+
+        In the following example we initialize with `i = 0` and iterate while our condition `i < 5` is true. We'll increment i by 1 in each loop iteration with i++ as our `final-expression.`
+        -``var ourArray = [];
+            for (var i = 0; i < 5; i++) {
+            ourArray.push(i);
+            }``
+
 - Iterate with JavaScript For Loops
         Not Passed
 - Iterate Odd Numbers With a For Loop
-        Not Passed
+        - ``var ourArray = [];
+            for (var i = 0; i < 10; i += 2) {
+            ourArray.push(i);
+            }``
+        - 
 - Count Backwards With a For Loop
-        Not Passed
+        -``for (var i=10; i > 0; i-=2) {
+            ourArray.push(i);
+            }``
 - Iterate Through an Array with a For Loop
         Not Passed
 - Nesting For Loops
